@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView-->
+<!--android:id="@+id/slno"-->
+<!--android:layout_weight="0"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="1"-->
+<!--android:layout_marginLeft="50dp"-->
+<!--android:textSize="20sp"/>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        <TextView
+            android:id="@+id/slno"
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:text="Sl"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_regular"
+            android:textSize="16sp"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/debit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="Name"
+            android:fontFamily="@font/open_regular"
+            android:textAlignment="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/interest"
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Debit"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/document_charge"
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Doc_chrg"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/collection_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:fontFamily="@font/open_regular"
+            android:textAlignment="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/discount"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Debit"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/credit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Doc_chrg"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/debit"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:text="Sl"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_regular"
+            android:textSize="16sp"
+            android:gravity="start" />
+        <TextView
+            android:id="@+id/other_fee"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:text="Sl"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_regular"
+            android:textSize="16sp"
+            android:gravity="start" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayed"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/vi"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayed"/>
+        <View
+            android:id="@+id/vi1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/gray"/>
+    </LinearLayout>
+</LinearLayout>

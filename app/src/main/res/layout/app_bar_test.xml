@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_weight="0.01"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/logout"
+                    android:layout_width="@dimen/font_size_large7"
+                    android:layout_height="@dimen/font_size_large7"
+                    android:layout_marginRight="2dp"
+                    android:backgroundTint="@color/White"
+                    android:background="@drawable/back"/>
+                <TextView
+                    android:layout_weight="1.99"
+                    android:id="@+id/dealername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:text="@string/testing_report"
+                    android:textAllCaps="true"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/font_size_large" />
+
+
+
+            </LinearLayout>
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1.5"-->
+            <!--                    android:orientation="vertical">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/dealername"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="left"-->
+            <!--                        android:layout_marginLeft="10dp"-->
+            <!--                        android:layout_marginRight="10dp"-->
+            <!--                        android:gravity="left"-->
+            <!--                        android:text="Dealer name"-->
+            <!--                        android:textAllCaps="true"-->
+            <!--                        android:fontFamily="@font/poppinsbold"-->
+            <!--                        android:textColor="@color/White"-->
+            <!--                        android:textSize="15sp" />-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/loginusername"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="left"-->
+            <!--                        android:layout_marginLeft="10dp"-->
+            <!--                        android:layout_marginRight="10dp"-->
+            <!--                        android:gravity="left"-->
+            <!--                        android:textAllCaps="true"-->
+            <!--                        android:text="Login user name"-->
+            <!--                        android:fontFamily="@font/poppinsmediumitalic"-->
+            <!--                        android:textColor="@color/White"-->
+            <!--                        android:textSize="15sp" />-->
+
+            <!--                </LinearLayout>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:id="@+id/logout"-->
+            <!--                    android:layout_weight="0.5"-->
+            <!--                    android:layout_width="25dp"-->
+            <!--                    android:layout_height="25dp"-->
+            <!--                    android:layout_marginRight="2dp"-->
+            <!--                    android:backgroundTint="@color/White"-->
+            <!--                    android:background="@drawable/logout"/>-->
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:visibility="gone"
+            android:text="Excel"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

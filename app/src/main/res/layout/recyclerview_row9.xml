@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:weightSum="5">
+
+
+        <TextView
+            android:id="@+id/slno"
+            android:layout_weight="0.5"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:text="Sl"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_regular"
+            android:textSize="16sp"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:fontFamily="@font/open_regular"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="Type"
+            android:textAlignment="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_weight="1.5"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Amount"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Action"
+           android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/delete"
+                android:textSize="7dp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vi1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="visible"
+            android:background="@color/grayed"/>
+    </LinearLayout>
+
+</LinearLayout>

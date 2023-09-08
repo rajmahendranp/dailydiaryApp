@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/blacked"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/final_drawww"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/searchid"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.2"
+                    android:clickable="true"
+                    android:hint="ID"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_regular"
+                    android:background="@drawable/search_widget"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:textColor="@color/spin3"
+                    android:textColorHint="@color/spin3" />
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.2"
+                    android:clickable="true"
+                    android:hint="Name"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_regular"
+                    android:background="@drawable/search_widget"
+                    android:textSize="15dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:inputType="textFilter"
+                    android:textColor="@color/spin3"
+                    android:textColorHint="@color/spin3" />
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/close" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:editable="false"
+                    android:text="@string/SN"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/spin2"
+                    android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/name"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp"
+                 />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/spin2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:editable="false"
+                    android:textAlignment="textStart"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/total_days"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/spin2"
+                    android:textSize="15dp" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:text="@string/debit_date"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/debit_amount"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+
+                android:text="@string/credited_amount"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="13dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/balance_amount"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/closing_date"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/info"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:editable="false"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:editable="false"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/days"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/spin2"
+                    android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/paid_days"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spin2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:textAlignment="textStart"
+                android:gravity="start|center_vertical"
+                android:text="@string/missing_days"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/spin2"
+                android:textSize="15dp" />
+
+             </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/slno"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:editable="false"
+                        android:text="Slno :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Name :"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/days"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Total days :"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+                    <TextView
+                        android:id="@+id/debitdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="Debit date :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+                    <TextView
+                        android:id="@+id/debitamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="Debit amount :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+                    <TextView
+                        android:id="@+id/creditedamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Credited amount :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/balanceamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Balance amount :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/closingdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="Closing date :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+                    <TextView
+                        android:id="@+id/info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Info"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:editable="false"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/totaldays"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Total days :"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/completeddays"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="Completed days :"
+                        android:textColor="#ffffff"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/spin2"/>
+
+                    <TextView
+                        android:id="@+id/missingdays"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="Missing days :"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/spin2"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

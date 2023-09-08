@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right|center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/opensans"
+        android:gravity="center"
+        android:backgroundTint="?attr/colorPrimary"
+        android:background="@drawable/popup_close"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/daily_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="?attr/textcolor1" />
+        <TextView
+            android:layout_weight="0.2"
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:layout_gravity="start|center"
+            android:gravity="start|center"
+            android:textAlignment="textStart"
+            android:text="@string/daily"
+            android:paddingLeft="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/weekly_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="?attr/textcolor1" />
+        <TextView
+            android:layout_weight="0.2"
+            android:id="@+id/weekly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:layout_gravity="start|center"
+            android:gravity="start|center"
+            android:textAlignment="textStart"
+            android:text="@string/weekly"
+            android:textAllCaps="true"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/monthly_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="?attr/textcolor1" />
+        <TextView
+            android:layout_weight="0.2"
+            android:id="@+id/monthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:layout_gravity="start|center"
+            android:gravity="start|center"
+            android:textAlignment="textStart"
+            android:text="@string/monthly"
+            android:textAllCaps="true"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/admin_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="?attr/textcolor1" />
+        <TextView
+            android:layout_weight="0.2"
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:layout_gravity="start|center"
+            android:gravity="start|center"
+            android:textAlignment="textStart"
+            android:text="@string/admin"
+            android:textAllCaps="true"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="right|center"
+        android:gravity="right|center"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/curved"
+        android:text="@string/submit"
+        android:layout_margin="5dp"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensans"
+        android:textColor="@color/White"
+        />
+
+</LinearLayout>

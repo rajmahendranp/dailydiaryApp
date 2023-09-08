@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/editText"
+        android:background="@drawable/popup_close"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+        android:layout_toRightOf="@+id/editText" />
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawSelectorOnTop="false"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="30dp"
+        android:paddingHorizontal="10dp"
+        ></Spinner>
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawSelectorOnTop="false"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="30dp"
+        android:paddingHorizontal="10dp"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/select_language"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_regular"
+        android:textColor="?attr/colorPrimary"
+        android:textColorHint="?attr/colorPrimary"
+        android:textSize="20dp"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/select_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/select_language"
+        android:textAlignment="center"
+        android:background="@drawable/curved_gold2"
+        android:fontFamily="@font/opensans"
+        android:textColor="@color/White"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="15dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_weight="3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/spinhead"
+        android:text="NO DATA AVAILABLE ...."
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_gold"
+                android:fontFamily="@font/open_regular"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:text="@string/submit"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/closee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_black"
+                android:fontFamily="@font/open_regular"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:text="@string/close"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

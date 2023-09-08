@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:right="1dp" android:left="1dp">
+                <shape android:tint="@color/backblue"
+                    android:shape="rectangle">
+                    <solid android:color="@color/backblue" />
+                    <size android:width="20dp" android:height="48dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:right="1dp" android:left="1dp">
+                <shape android:tint="@color/backblue"
+                    android:shape="rectangle">
+                    <solid android:color="@color/backblue" />
+                    <size android:width="20dp" android:height="48dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

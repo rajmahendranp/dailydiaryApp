@@ -1,0 +1,180 @@
+{
+  "project_info": {
+    "project_number": "8806606182",
+    "firebase_url": "https://dailydiary-36430-default-rtdb.firebaseio.com",
+    "project_id": "dailydiary-36430",
+    "storage_bucket": "dailydiary-36430.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8806606182:android:01994d140611b03ee2d4a7",
+        "android_client_info": {
+          "package_name": "com.rampit.rask3.dailydiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8806606182-i45qj15eqc8d7tef2cm37cp0492taqa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rampit.rask3.dailydiary",
+            "certificate_hash": "6cda8bc88d2a126e114ebbedaeeb91489d5ece05"
+          }
+        },
+        {
+          "client_id": "8806606182-q6elnmv3krpdj0ioce5pkd0oht6vk42k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rampit.rask3.dailydiary",
+            "certificate_hash": "b9f8fd4bf920d71f10c668918ffebfb99f6e07e5"
+          }
+        },
+        {
+          "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZroJLUjhQRxeB9r6KBSzkSf8wQQODGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8806606182:android:7c9188e599c2d40ee2d4a7",
+        "android_client_info": {
+          "package_name": "com.rampit.rask3.dailydiary_superadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8806606182-7n4ggrsb6tdcvsudhm5hucajibuok2g6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rampit.rask3.dailydiary_superadmin",
+            "certificate_hash": "6cda8bc88d2a126e114ebbedaeeb91489d5ece05"
+          }
+        },
+        {
+          "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZroJLUjhQRxeB9r6KBSzkSf8wQQODGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8806606182:android:7c4de55005dd60f4e2d4a7",
+        "android_client_info": {
+          "package_name": "com.rampit.rask3.dailydiary_superadmin_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZroJLUjhQRxeB9r6KBSzkSf8wQQODGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8806606182:android:bde2102e774b9b80e2d4a7",
+        "android_client_info": {
+          "package_name": "com.rampit.rask3.dailydiary_superadmin_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZroJLUjhQRxeB9r6KBSzkSf8wQQODGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8806606182:android:a0f25027d954c277e2d4a7",
+        "android_client_info": {
+          "package_name": "com.rampit.rask3.dailydiaryv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZroJLUjhQRxeB9r6KBSzkSf8wQQODGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8806606182-ddojvkamvic5sratabbjfa8gqijkeiha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

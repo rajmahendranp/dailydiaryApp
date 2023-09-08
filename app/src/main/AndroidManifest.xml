@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rampit.rask3.dailydiary">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.things.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name = ".Callback"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/dailylogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dailylogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:appComponentFactory="androidx"
+        tools:replace="android:appComponentFactory"
+        android:usesCleartextTraffic="true">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!--   <service
+               android:name=".CallDetectionService"
+               android:enabled="true"
+               android:exported="false" >
+           </service>
+           <receiver android:name=".CallReceiver">
+               <intent-filter>
+                   <action android:name="android.intent.action.PHONE_STATE" />
+               </intent-filter>
+               <intent-filter>
+                   <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+               </intent-filter>
+           </receiver>-->
+        <activity android:name=".closed_check"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AllCollection"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Draganddrop"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Register"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ExportDB"
+            android:requestLegacyExternalStorage="true"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Enterotp"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Closing_account_activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".delete_datas"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".test_tab_activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".confirm_OTP"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Loggedin" />
+        <activity android:name=".Login"
+
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Current_activity"
+            android:label="@string/title_current_activity"
+            />
+        <activity android:name=".Closedaccount_activity"
+            android:label="@string/title_Closed_activity"
+            />
+        <activity android:name=".Remaining"
+            android:label="@string/title_Closed_activity"
+            />
+
+        <activity android:name=".PDF_server"
+            android:label="@string/title_Closed_activity"
+            />
+        <activity android:name=".Language_activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".main_activity1"/>
+        <activity android:name=".Splash"
+            android:configChanges="locale">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.CALL_PRIVILIGED" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data android:scheme="tel" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation" />
+        <activity
+            android:name=".Add_user"
+            android:label="@string/title_add_user_activity"
+            />
+        <activity
+            android:name=".Activity_privilege"
+            android:label="@string/title_privilege_activity"
+            />
+        <activity
+            android:name=".user_activity"
+            android:label="@string/title_user_activity" />
+        <activity
+            android:name=".Collectiondetail_activity"
+            android:label="@string/title_activity_collectiondetail" />
+        <activity
+            android:name=".Totalaccounts"
+            android:label="@string/title_totalaccounts" />
+
+        <activity
+            android:name=".Customer_activity"
+            android:label="@string/title_activity_customers" />
+        <activity
+            android:name=".Incompletedaccount_activity"
+            android:label="@string/title_activity_incompleted" />
+        <activity
+            android:name=".Print_activity"
+            android:requestLegacyExternalStorage="true"
+            android:label="@string/title_print" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Add_employee"
+            android:label="@string/add_employee" />
+        <activity
+            android:name=".Employee_payment"
+            android:label="@string/employee_payment"
+            />
+        <activity
+            android:name=".Add_employee_payment"
+            android:label="@string/add_employee_payment"
+            />
+        <activity
+            android:name=".Totalcustomer_activity"
+            android:label="@string/title_activity_totalcustomer"
+            />
+        <activity
+            android:name=".NIPNIP_activity"
+            android:label="@string/title_activity_nipnip"
+            />
+
+        <activity
+            android:name=".Todaycollection_activity"
+            android:label="@string/title_activity_todaycollection"
+            />
+        <activity
+            android:name=".NIP_activity"
+            android:label="@string/title_activity_NIP"
+            />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".Final_report"
+            android:label="@string/final_report"
+            />
+        <activity
+            android:name=".Addnames"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:label="@string/title_activity_addnames" />
+        <activity
+            android:name=".Debit"
+            android:label="@string/title_activity_debit" />
+        <activity
+            android:name=".Newdebit"
+            android:label="@string/title_activity_new_debit" />
+        <activity
+            android:name=".Popnames"
+            android:label="@string/title_activity_debit"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Collection"
+            android:label="@string/title_activity_collection"
+            />
+        <activity
+            android:name=".Bulkupdate"
+            android:label="@string/title_activity_bulkactivity" />
+        <activity
+            android:name=".Quick_bulkupdate"
+            android:label="@string/title_activity_bulkactivity" />
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account"
+            />
+        <activity
+            android:name=".Addaccount"
+            android:label="@string/title_activity_add_account"
+            />
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report"
+            />
+        <activity
+            android:name=".Settings_activity"
+            android:label="@string/title_activity_settings_activity"
+            />
+        <activity
+            android:name=".Tally_activity"
+            android:label="@string/title_activity_tally_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Employee_details"
+            android:label="@string/title_activity_employee_details" />
+        <activity
+            android:name=".Today_report"
+            android:requestLegacyExternalStorage="true"
+            android:label="@string/title_activity_today_report"></activity>
+    </application>
+
+</manifest>

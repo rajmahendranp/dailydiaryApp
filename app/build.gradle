@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileOptions.encoding = 'UTF-8'
+    defaultConfig {
+        applicationId "com.rampit.rask3.dailydiary"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 32
+        versionName "1.32"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+/*
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/values-hdpi', 'src/main/res/values-ldpi', 'src/main/res/values-mdpi', 'src/main/res/values-xhdpi', 'src/main/res/values-xxhdpi', 'src/main/res/values-large', 'src/main/res/values-large-mdpi', 'src/main/res/values-sw600dp', 'src/main/res/values-720dp', 'src/main/res/values-xlarge-xhdpi', 'src/main/res/values-large-xhdpi', 'src/main/res/values-xxxhdpi']
+        }
+    }
+*/
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation  'net.gotev:uploadservice:2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0';
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'com.itextpdf:itextpdf:5.5.9'
+    implementation 'com.itextpdf:io:7.0.2'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.54'
+    implementation 'com.sun.mail:android-mail:1.5.6'
+    implementation 'com.sun.mail:android-activation:1.5.6'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-firestore:22.0.2'
+    implementation 'androidx.multidex:multidex:2.0.0'
+//    implementation 'testfairy:testfairy-android-sdk:1.+@aar'
+    implementation 'com.google.android.play:core:1.6.4'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'// for google sign in
+    // for drive integration
+    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-drive:v3-rev136-1.25.0')
+            {
+                exclude group: 'org.apache.httpcomponents'
+            }
+}

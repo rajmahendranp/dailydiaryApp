@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/slno"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_regular"
+                android:text="Sl"
+                android:textAlignment="center"
+                android:textColor="@color/spin3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/open_regular"
+                android:text="Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/spin3"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/text_input_layout"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/amount"-->
+
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/spin3"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:inputType="number"-->
+<!--                    android:text=""-->
+<!--                    android:theme="@style/TextLabel"-->
+<!--                    android:background="@drawable/edittext_tint"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:textSize="18sp"-->
+<!--                   />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <EditText
+                android:id="@+id/amount"
+                android:layout_weight="0.7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/spin3"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:text=""
+                android:hint="@string/expiry_date"
+                android:background="@drawable/edittext_tint"
+                android:visibility="visible"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/amount1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:text="No Debit"
+                android:background="@drawable/bordered_button_black"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:visibility="gone" />
+            <!--        android:focusable="false"-->
+            <!--        android:clickable="true"-->
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/save12"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="@string/save_icon" />
+                <TextView
+                    android:id="@+id/drag"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="@string/drag_icon" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/save"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/save"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/vi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayed"/>
+            <View
+                android:id="@+id/vi1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/grayed"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--   -->
+</LinearLayout>

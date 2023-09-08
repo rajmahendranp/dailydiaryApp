@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="closed_check">மூடியது  சரிபார்</string>
+    <string name="debit_greater">Entered debit amount should be greater than total collected amount</string>
+    <string name="download_sync"><![CDATA[Download & Sync]]></string>
+    <string name="mail12">Mail\nPDF</string>
+    <string name="pdf">PDF</string>
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="active_accounts_greater">Active accounts greater than 1</string>
+    <string name="on_internet_for_backup">Veuillez activer votre connexion Internet pour télécharger la sauvegarde sur le serveur</string>
+    <string name="note2222">"Le nombre de clients est basé sur"</string>
+    <string name="cus_count_based_on">Décompte basé sur :</string>
+    <string name="download_sync_drive"><![CDATA[Download & sync from drive]]></string>
+    <string name="you_dont_have_permission1">Vous nêtes pas autorisé à télécharger une sauvegarde sur le lecteur.</string>
+    <string name="archive_closed_account">Sélectionnez la date darchivage jusquà</string>
+    <string name="are_you_sure_delete">"Voulez-vous vraiment archiver l'historique jusqu'à"</string>
+    <string name="archive">Archive</string>
+    <string name="please_sign">"Le compte Google n'est pas connecté correctement. Veuillez vous connecter pour le téléchargement dans le lecteur."</string>
+    <string name="edit_folder">Edit Folder name</string>
+    <string name="are_you_sure_delete_collection">Are you sure want to delete this collection?</string>
+</resources>

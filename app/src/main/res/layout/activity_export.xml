@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- //Updated on 25/01/2022 by RAMPIT-->
+<!-- Function - //used to import and export database-->
+<!-- Location  - Dasboard -> Settings -> Import/Export   -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearr"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/Orangee"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/White"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/up"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1.5"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke"
+            >
+
+            <Button
+                android:id="@+id/print_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:editable="false"
+                android:background="@drawable/notes"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="@string/export1"
+                android:editable="false"
+                android:textColor="@color/Black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/down"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1.5"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="@color/WhiteSmoke"
+            >
+
+            <Button
+                android:id="@+id/import_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:editable="false"
+                android:background="@drawable/notes"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="@string/import1"
+                android:editable="false"
+                android:textColor="@color/Black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/path"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:textColor="@color/Black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/google_drive"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="left"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_weight="1.9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_checkbox"
+                    android:textColor="?attr/textcolor"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/google_drive_auto_backup"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="15dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ddrriivvee"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/google_drive_auto_backup_interval"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:drawSelectorOnTop="false"
+                        android:dropDownWidth="250dp"
+                        android:dropDownVerticalOffset="30dp"
+                        android:paddingHorizontal="10dp"></Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:editable="false"
+                android:text="@string/save"
+                android:textAlignment="center"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bordered_button"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/radius5"
+            android:paddingRight="@dimen/radius5"
+            android:focusable="false"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="?attr/textcolor"
+            android:hint="@string/folder_name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_large" />
+
+        <TextView
+            android:id="@+id/edit_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:text="@string/edit_folder"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bordered_button"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/upload_drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:text="@string/upload_drive"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bordered_button"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/download_sync_drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:editable="false"
+            android:text="@string/download_sync_drive"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bordered_button_red"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/uploading"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/uploading"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView311"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/uploading"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/colorPrimary"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/server"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/upload_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:text="@string/upload_backup"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bordered_button"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/download_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:editable="false"
+            android:text="@string/download_sync"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bordered_button_red"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/progressBar_cyclic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:layout_marginTop="10dp"
+            android:progressTint="?attr/colorPrimary"
+            />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/uploading"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/uploading"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/open_regular</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Orangee</item>
+        <item name="android:textColorHint">@color/Gray</item>
+        <item name="colorControlNormal">@color/Gray</item>
+        <item name="buttonNormalColor">@color/Greenn</item>
+        <item name="listChoiceBackgroundIndicator">@color/Orangee</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@drawable/popup_curve</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorPrimary">@color/backblue</item>
+        <item name="colorAccent">@color/backblue</item>
+        <item name="android:textColorHint">@color/spin6</item>
+        <item name="textcolor">@color/spin6</item>
+        <item name="textcolor1">@color/Black</item>
+        <item name="textcolor2">@color/White</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+<!--    <style name="DatePicker" parent="@android:style/Theme.Holo.Light">-->
+<!--        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>-->
+<!--    </style>-->
+
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar1">
+        <item name="android:background">@color/White</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar2">
+        <item name="android:background">@color/Black</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar3">
+        <item name="android:background">@color/Orangee</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textColorSecondary">@color/White</item>
+        <item name="android:tint">#62ff00</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="android:background">@color/Orangee</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Orangee</item>
+        <item name="android:textColorSecondary">@color/White</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">@color/Gray</item>
+        <item name="colorAccent">@color/Gray</item>
+        <item name="colorControlNormal">@color/Gray</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/opensans</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay"></style>
+</resources>

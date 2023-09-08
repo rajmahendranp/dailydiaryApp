@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+    <item android:id="@+id/company"
+        android:title="@string/company"
+        android:icon="@drawable/company"
+       />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+    <item android:id="@+id/user"
+        android:icon="@drawable/customer"
+        android:title="@string/customer123"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+    <item android:id="@+id/debit"
+        android:icon="@drawable/debit"
+        android:title="@string/debit"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+    <item
+        android:id="@+id/collection"
+        android:icon="@drawable/collection"
+        android:title="@string/collection" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+    <item android:id="@+id/report"
+        android:icon="@drawable/reports"
+        android:title="@string/reports"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group7">
+    <item android:id="@+id/customer"
+        android:icon="@drawable/user1"
+        android:title="@string/individual1"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item android:id="@+id/account"
+            android:icon="@drawable/account30"
+            android:title="@string/account"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group8">
+    <item android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        android:title="@string/settings"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group11">
+        <item android:id="@+id/today"
+            android:icon="@drawable/today"
+            android:title="@string/today_report"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group10">
+    <item android:id="@+id/employee"
+        android:icon="@drawable/user1"
+        android:title="@string/employee_details"/></group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group9">
+        <item android:id="@+id/tally"
+            android:icon="@drawable/notes"
+            android:title="@string/tally"/>
+    </group>
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:visible="false"
+        android:title="@string/Logout"/>
+<!--    <group>-->
+<!--        ...-->
+<!--        <item-->
+<!--            android:title=""-->
+<!--            android:orderInCategory="200"/>-->
+<!--    </group>-->
+</menu>

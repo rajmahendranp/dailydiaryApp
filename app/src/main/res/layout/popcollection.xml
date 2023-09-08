@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/final_drawww"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/nnam"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:clickable="true"
+                android:fontFamily="@font/open_regular"
+                android:textColor="@color/White"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:clickable="true"
+                android:fontFamily="@font/open_regular"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="10dp" />
+            <Button
+                android:id="@+id/close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blacked"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/slno"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.4"
+                android:text="@string/SN2"
+                android:textAlignment="center"
+                android:textColor="@color/spinhead"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="@string/date"
+                android:textAlignment="center"
+                android:textColor="@color/spinhead"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="@string/amount"
+                android:textAlignment="center"
+                android:textColor="@color/spinhead"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnimals"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="NO DATA AVAILABLE ...."/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.2"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textAlignment="center"
+                    android:text="@string/total_collection"
+                    android:textColor="@color/White"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/amount1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="15sp" />
+            </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

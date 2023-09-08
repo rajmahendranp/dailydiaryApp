@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_large4">20sp</dimen>
+    <dimen name="font_size_large">17sp</dimen>
+    <dimen name="font_size_large1">16sp</dimen>
+    <dimen name="font_size_large2">10sp</dimen>
+    <dimen name="font_size_large3">12sp</dimen>
+    <dimen name="font_size_large5">5sp</dimen>
+    <dimen name="font_size_large6">40sp</dimen>
+    <dimen name="font_size_large7">25sp</dimen>
+    <dimen name="font_size_large8">13sp</dimen>
+
+    <dimen name="padding_shadow">1dp</dimen>
+    <dimen name="radius3">2dp</dimen>
+    <dimen name="radius4">3dp</dimen>
+    <dimen name="radius5">4dp</dimen>
+    <dimen name="radius6">5dp</dimen>
+    <dimen name="radius7">6dp</dimen>
+    <dimen name="radius8">7dp</dimen>
+
+    //login
+    <dimen name="login_width">85dp</dimen>
+    <dimen name="login_width1">105dp</dimen>
+    <dimen name="login_height">40dp</dimen>
+    <dimen name="login_edit_height">35dp</dimen>
+    <dimen name="login_margin_left">40dp</dimen>
+    <dimen name="login_margin_right">40dp</dimen>
+    <dimen name="login_margin_top">15dp</dimen>
+    <dimen name="login_padding_left">25dp</dimen>
+    <dimen name="login_eye_margin_left">-90dp</dimen>
+    <dimen name="login_eye_margin_top">23dp</dimen>
+    <dimen name="login_eye_padding_bottom">17dp</dimen>
+    <dimen name="login_eye_width">23dp</dimen>
+    <dimen name="login_eye_height">18dp</dimen>
+    <dimen name="login_skip_width">45dp</dimen>
+    <dimen name="login_skip_height">45dp</dimen>
+
+    //register
+    <dimen name="register_width1">180dp</dimen>
+    <dimen name="register_height1">50dp</dimen>
+    <dimen name="register_height">45dp</dimen>
+    <dimen name="register_edit_height">33dp</dimen>
+    <dimen name="register_margin_left">40dp</dimen>
+    <dimen name="register_margin_right">40dp</dimen>
+    <dimen name="register_margin_top">13dp</dimen>
+    <dimen name="register_margin_top1">23dp</dimen>
+    <dimen name="register_margin_bottom1">20dp</dimen>
+    <dimen name="register_padding_left">25dp</dimen>
+    <dimen name="register_padding_left1">6dp</dimen>
+    <dimen name="register_padding_right1">6dp</dimen>
+    <dimen name="register_eye_margin_left">-80dp</dimen>
+    <dimen name="register_eye_margin_top">10dp</dimen>
+    <dimen name="register_eye_padding_bottom">19dp</dimen>
+    <dimen name="register_eye_width">23dp</dimen>
+    <dimen name="register_eye_height">18dp</dimen>
+
+    //splash
+    <dimen name="splash_height">135dp</dimen>
+    <dimen name="splash_width">195dp</dimen>
+
+    //main
+    <dimen name="shop_recycle_height">125dp</dimen>
+    <dimen name="shop_recycle_top">15dp</dimen>
+    <dimen name="abar_margin_top">5dp</dimen>
+    <dimen name="abar_margin_right">5dp</dimen>
+    <dimen name="main_bottom_height">40dp</dimen>
+    <dimen name="abar_padding_left">14dip</dimen>
+    <dimen name="fab_padding_bottom">60dip</dimen>
+    <dimen name="fab_width">75dp</dimen>
+    <dimen name="fab_height">75dp</dimen>
+
+    //shopsrecycler
+    <dimen name="shop_img_width">90dp</dimen>
+    <dimen name="shop_img_height">75dp</dimen>
+    <dimen name="shop_but_width">15dp</dimen>
+    <dimen name="shop_but_height">15dp</dimen>
+    <dimen name="shop_margin_top">4dp</dimen>
+    <dimen name="shop_fontsize">9dp</dimen>
+    <dimen name="shop_margin_left1">8dp</dimen>
+    <dimen name="shop_margin_right1">8dp</dimen>
+    <dimen name="shop_margin_top1">8dp</dimen>
+    <dimen name="shop_margin_bottom1">8dp</dimen>
+    <dimen name="shop_but_top">5dp</dimen>
+    <dimen name="shop_but_right">5dp</dimen>
+
+    //recyclesub
+    <dimen name="recycle_cat_but_height">25dp</dimen>
+    <dimen name="recycle_cat_but_marend">10dp</dimen>
+    <dimen name="recycle_cat_but2_height">25dp</dimen>
+    <dimen name="recycle_cat_but2_width">60dp</dimen>
+    <dimen name="recycle_cat_drawpad">10dp</dimen>
+    <dimen name="recycle_cat_but2_marend">8dp</dimen>
+    <dimen name="recycle_scat_padding">23dp</dimen>
+    <dimen name="recycle_cat_but3_height">30dp</dimen>
+
+    //badge
+    <dimen name="badge_width">17dp</dimen>
+    <dimen name="badge_height">17dp</dimen>
+    <dimen name="badge_tsize">10sp</dimen>
+    <dimen name="badge_ml">20dp</dimen>
+    <dimen name="badge_mb">35dp</dimen>
+    <dimen name="badge_ms">20dp</dimen>
+
+    //profileedit
+    <dimen name="img_width">130dp</dimen>
+    <dimen name="img_height">130dp</dimen>
+
+    //dynamicvalues
+    <dimen name="textwidth">10dp</dimen>
+    <dimen name="textheight">30dp</dimen>
+
+    //orderlist
+    <dimen name="spinner_width">120dp</dimen>
+    <dimen name="spinner_height">30dp</dimen>
+
+    //recyccat
+    <dimen name="recyccat_height">30dp</dimen>
+
+
+    <dimen name="recycprod_height">25dp</dimen>
+    <dimen name="recycprod_width">75dp</dimen>
+
+    <dimen name="drawablePadding">1dp</dimen>
+    <dimen name="logowidth">160dp</dimen>
+</resources>

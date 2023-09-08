@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linee"
+    android:background="?attr/textcolor2">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="?attr/textcolor2"
+            >
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/user1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textAllCaps="true"
+                android:textColor="?attr/textcolor1"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:background="?attr/textcolor2"
+        >
+
+        <Button
+            android:id="@+id/theme"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/theme"
+            android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="@string/Theme"
+                android:textAllCaps="true"
+                android:textColor="?attr/textcolor1"
+                android:textSize="13dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:background="?attr/textcolor2"
+            >
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logout"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="@string/Logout"
+                android:textAllCaps="true"
+                android:textColor="?attr/textcolor1"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

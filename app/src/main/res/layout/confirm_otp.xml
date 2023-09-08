@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //Updated on 25/01/2022 by RAMPIT-->
+<!-- Function - //Check OTP-->
+<!-- Location  - Login -> Enter_OTP ->confirm_OTP   -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/infoline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:editable="false"
+            android:background="@drawable/dailylogo"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:gravity="center"
+            android:clickable="false"
+            android:editable="false"
+            android:text="@string/mobile_pin_validate"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="30dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout1"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/otppass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/OTPpass"
+                android:textSize="20dp"
+                android:textColorHint="@color/Green"
+                android:textColor="?attr/textcolor1"
+                android:inputType="numberPassword"
+                android:theme="@style/TextLabel"
+                android:background="@drawable/edittext_tint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/otppass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_pin"
+                    android:textSize="20dp"
+                    android:textColorHint="@color/Green"
+                    android:textColor="?attr/textcolor1"
+                    android:inputType="numberPassword"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/edittext_tint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/eyes"
+                android:paddingBottom="15dp"
+                android:background="@drawable/eye_blue"
+                style="?android:buttonBarButtonStyle"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/loginpass"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_selector"
+                android:gravity="center"
+                android:text="@string/OTPpass"
+                android:textColor="@color/White"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/forgot_pin"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/licenseline"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dailylogo"
+            android:layout_marginTop="100dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:gravity="center"
+            android:text="@string/license"
+
+            android:textAllCaps="true"
+            android:textColor="@color/Orangee"
+            android:textSize="30dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/license"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/Green"
+                android:theme="@style/TextLabel"
+                android:background="@drawable/edittext_tint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/expiry_date"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+
+            />
+        <TextView
+            android:id="@+id/expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/start"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+
+            />
+
+
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:background="@drawable/login_selector"
+            android:text="@string/submit" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

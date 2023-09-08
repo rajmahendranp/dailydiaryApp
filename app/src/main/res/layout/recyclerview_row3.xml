@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/slno"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/open_regular"
+                android:text="Sl"
+                android:textAlignment="center"
+                android:textColor="@color/spin3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:fontFamily="@font/open_regular"
+                android:text="Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/spin3"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <LinearLayout
+                android:orientation="horizontal" android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/closedd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_weight="0.2"
+                    android:text="@string/delete_png"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?attr/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/edittext_tint"
+                    android:inputType="number"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/spin3"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+                <!--                <ImageButton -->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_width="10dp"-->
+                <!--                    android:layout_marginLeft="-70dp"-->
+                <!--                    android:id="@+id/closedd"-->
+                <!--                    android:layout_weight="0.1"-->
+                <!--                    android:paddingBottom="5dp"-->
+                <!--                    -->
+                <!--                    android:background="@drawable/close"-->
+                <!--                    style="?android:buttonBarButtonStyle"/>-->
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/amount1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_weight="0.6"
+                android:text="No Debit"
+                android:background="@drawable/bordered_button_black"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="12sp"
+                android:visibility="gone" />
+            <!--        android:focusable="false"-->
+            <!--        android:clickable="true"-->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/vi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayed"/>
+            <View
+                android:id="@+id/vi1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/grayed"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <Button
+                android:visibility="gone"
+                android:layout_weight="0.2"
+                android:id="@+id/more"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/view_more"/>
+            <TextView
+                android:id="@+id/more1"
+                android:layout_weight="0.2"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:text="@string/arrow_down" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="4.5">
+                    <TextView
+                        android:id="@+id/debi"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Debit"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/colle"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:text="Debit"
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/balan"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Debit"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="4.5">
+                    <TextView
+                        android:id="@+id/totdays"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Debit"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/paidays"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Debit"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/misdays"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Debit"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:clickable="false"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/spin3"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_weight="0.2"
+                android:id="@+id/save"
+                android:visibility="gone"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/save_orange1"/>
+            <TextView
+                android:nextFocusUp="@id/amount"
+                android:nextFocusForward="@id/amount"
+                android:layout_weight="0.2"
+                android:id="@+id/save12"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:text="@string/save_icon" />
+
+        </LinearLayout>
+
+        <!--            <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:padding="@dimen/activity_horizontal_margin">-->
+        <!--            <androidx.core.widget.NestedScrollView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:fillViewport="true"-->
+        <!--                android:scrollbars="vertical">-->
+
+        <!--            <ScrollView-->
+        <!--                android:id="@+id/scroll"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content">-->
+        <!--            <androidx.core.widget.NestedScrollView-->
+        <!--                android:id="@+id/scroll"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="100dp"-->
+        <!--                android:scrollbars="vertical"-->
+        <!--                android:fillViewport="false">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lire"
+            android:gravity="left|center"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/collection_history"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="?attr/textcolor2"
+                android:background="@drawable/login_selector"
+                android:text="@string/collection_history"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/total_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/paid_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/balance_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/openingdate"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/closing_date"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/paid_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/missing_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/balanace_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/missing_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/other"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/discount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/installment"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/location"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:text="@string/phone"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/days"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/total_days"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/paid"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/paid_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/bamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/balance_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/odate"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/openingdate"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/cdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/closing_date"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/pdays"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/paid_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/mdays"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/missing_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/bdays"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/balanace_days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/bmamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/missing_amount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/other"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/other"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/discount"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/instal"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:gravity="end"
+                        android:text="Installment Amount"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/tdays"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/days"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:textAlignment="textEnd"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/location"
+                        android:textColor="@color/spin3"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grayed"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:editable="false"
+                        android:paddingLeft="10dip"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--            </ScrollView>-->
+        <!--        </androidx.core.widget.NestedScrollView>-->
+    </LinearLayout>
+    <!--   -->
+</LinearLayout>

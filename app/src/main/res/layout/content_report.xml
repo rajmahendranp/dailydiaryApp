@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- //Updated on 25/01/2022 by RAMPIT-->
+<!-- Function - //Contains buttons of all reports-->
+<!-- Location  - Dashboard -> Reports     -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:id="@+id/linearr"
+    tools:context=".ReportActivity"
+
+
+    >
+    <ScrollView
+        android:id="@+id/scroll1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="You dont have privilege to see Reports..."
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/current"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/current_account"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical" />
+            <Button
+                android:id="@+id/closed"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/closed_account"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/today"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/today_account"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/incompleted"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/current_incompleted_account"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/NIP"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/nip_account"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/NIPNIP"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/nip_nip_account"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/totalcus"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/total_customer1"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+            <Button
+                android:id="@+id/remaining"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/extra_collection"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+
+            <Button
+                android:id="@+id/finalreport"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/final_report"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/arrow_side"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+
+                android:background="@drawable/report_button"
+                android:gravity="start|center_vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

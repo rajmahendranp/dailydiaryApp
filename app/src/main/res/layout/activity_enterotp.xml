@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- //Updated on 25/01/2022 by RAMPIT-->
+<!-- Function - //used to enter and save OTP of user-->
+<!-- Location  - Login -> Enterotp   -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:editable="false"
+        android:background="@drawable/dailylogo"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans"
+        android:gravity="center"
+        android:text="@string/set_mobile_pin"
+        android:textAllCaps="true"
+        android:clickable="false"
+        android:editable="false"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/otppass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/OTPpass"
+            android:textSize="20dp"
+            android:inputType="numberPassword"
+            android:textColor="?attr/textcolor1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/edittext_tint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/otppass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_pin"
+                    android:textSize="20dp"
+                    android:inputType="numberPassword"
+                    android:textColor="?attr/textcolor1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/edittext_tint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/eyes"
+                android:paddingBottom="15dp"
+                android:background="@drawable/eye_blue"
+                style="?android:buttonBarButtonStyle"/>
+
+        </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/cotp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/conotp"
+            android:textSize="20dp"
+            android:inputType="numberPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="?attr/textcolor1"
+            android:theme="@style/TextLabel"
+            android:background="@drawable/edittext_tint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/cotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/conform_PIN"
+                    android:textSize="20dp"
+                    android:inputType="numberPassword"
+                    android:textColor="?attr/textcolor1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/edittext_tint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/eyes1"
+                android:paddingBottom="15dp"
+                android:background="@drawable/eye_blue"
+                style="?android:buttonBarButtonStyle"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:background="@drawable/login_selector"
+            android:visibility="visible"
+            android:textSize="20dp"
+            android:text="@string/set_pin"/>
+        <Button
+            android:id="@+id/loginpass"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textColor="@color/White"
+            android:background="@drawable/login_selector"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

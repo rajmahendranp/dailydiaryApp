@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:weightSum="5">
+        <TextView
+            android:id="@+id/slno"
+            android:layout_weight="0.6"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:text="Sl"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_regular"
+            android:textSize="16sp"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Name"
+            android:fontFamily="@font/open_regular"
+            android:inputType="textLongMessage"
+            android:textAlignment="center"
+            android:textColor="@color/spin3"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/debi"
+            android:layout_weight="1.2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Debit"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/balance_am"
+            android:layout_weight="1.2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spin3"
+            android:textAlignment="center"
+            android:text="Balance"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

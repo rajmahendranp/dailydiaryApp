@@ -1,0 +1,298 @@
+<resources>
+    <string name="app_name">dailydiary</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+        <string name="hello">Hello</string>
+    <string name="thank_you">Thank you</string>
+        <string name="welcome">Welcome,</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation">Dashboard</string>
+    <string name="title_activity_home_activityy">HomeActivityy</string>
+    <string name="title_activity_logged">Logged</string>
+    <string name="title_activity_home">User</string>
+    <string name="title_activity_addnames">Add User</string>
+    <string name="Rs">\u20B9</string>
+    <string-array name="spinnerItems">
+        <item>Select</item>
+        <item>Current</item>
+        <item>NIP</item>
+        <item>NIP NIP</item>
+
+    </string-array>
+    <string-array name="account_type">
+        <item>Select</item>
+        <item>Credit</item>
+        <item>Debit</item>
+
+    </string-array>
+    <string-array name="customer_type">
+        <item>Select</item>
+        <item>Debit</item>
+        <item>Non_Debit</item>
+
+    </string-array>
+    <string name="title_activity_debit">Debit</string>
+    <string name="title_activity_collection">Collection</string>
+    <string name="title_activity_bulkactivity">Bulk Update</string>
+    <string name="title_activity_account">Account</string>
+    <string name="title_activity_add_account">Addaccount</string>
+
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_todaycollection">Today Collection</string>
+    <string name="title_activity_NIP">NIP Account</string>
+    <string name="title_activity_incompleted">Current incompleted Account</string>
+    <string name="title_activity_nipnip">NIP NIP Account</string>
+    <string name="title_activity_totalcustomer">Total Customers</string>
+    <string name="title_activity_customers">Customers</string>
+    <string name="title_activity_collectiondetail">Collection detail</string>
+    <string name="title_activity_settings_activity">Settings</string>
+    <string name="title_print">Print</string>
+    <string name="title_activity_tally_activity">Tally_activity</string>
+    <string name="title_activity_employee_details">Employee</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="title_activity_today_report">Today_report</string>
+    <string name="collection"><font size ="17"
+        family="@font/opensans">COLLECTION</font></string>
+    <string name="debit"><font size ="17"
+        family="@font/opensans">DEBIT</font></string>
+    <string name="user"><font size ="17"
+        family="@font/opensans">USER</font></string>
+    <string name="company"><font size ="17"
+        family="@font/opensans">COMPANY</font></string>
+    <string name="reports"><font size ="17"
+        family="@font/opensans">REPORTS</font></string>
+    <string name="account"><font size ="17"
+        family="@font/opensans">ACCOUNT</font></string>
+    <string name="customer"><font size ="17"
+        family="@font/opensans">CUSTOMER</font></string>
+    <string name="settings"><font size ="17"
+        family="@font/opensans">SETTINGS</font></string>
+    <string name="tally"><font size ="17"
+        family="@font/opensans">TALLY</font></string>
+    <string name="employee_details"><font size ="17"
+        family="@font/opensans">EMPLOYEE DETAILS</font></string>
+    <string name="today_report"><font size ="17"
+        family="@font/opensans">TODAY REPORT</font></string>
+    <string name="title_user_activity">User</string>
+    <string name="Logout">Logout</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username"><font size="20">Username</font></string>
+    <string name="password"><font size="20">Password</font></string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="conotp">Confirm OTP</string>
+    <string name="OTPpas">OTP</string>
+    <string name="location">Location</string>
+    <string name="start">Start Date</string>
+    <string name="OTPpass">Enter OTP</string>
+    <string name="profile">Profile</string>
+    <string name="phone">Phone</string>
+    <string name="date">Date</string>
+    <string name="document">Document</string>
+    <string name="interest">Interest</string>
+    <string name="days">Days</string>
+    <string name="todate">To date</string>
+    <string name="license">License</string>
+    <string name="email">Email</string>
+    <string name="other">Other Charges</string>
+    <string name="discount">Discount</string>
+    <string name="name">Name</string>
+    <string name="father">Father Name</string>
+    <string name="land1">Landmark 1</string>
+    <string name="land2">Landmark 2</string>
+    <string name="phone2">Phone 2</string>
+    <string name="recommend">Recommend By</string>
+    <string name="relation">Relationship</string>
+    <string name="relation_phone">Relation Phone</string>
+    <string name="information">Information</string>
+    <string name="reason">Reason</string>
+    <string name="amount">Amount</string>
+    <string name="leave">Leave days</string>
+    <string name="resign">Resign date</string>
+    <string name="join">Join date</string>
+    <string name="note">Note</string>
+    <string name="fromdate">From Date</string>
+    <string name="add_employee_payment">Add Payment</string>
+    <string name="employee_payment">Employee Payment</string>
+    <string name="title_activity_new_debit">New Debit</string>
+    <string name="title_add_user_activity">Add User</string>
+    <string name="title_privilege_activity">Privilege</string>
+    <string name="title_current_activity">Current Account</string>
+    <string name="title_Closed_activity">Closed Account</string>
+    <string name="final_report">Final Report</string>
+    <string name="back">Back</string>
+    <string name="SN">SN</string>
+    <string name="action">Action</string>
+    <string name="Change_to">Change to</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="name_search">Name search</string>
+    <string name="current">current</string>
+    <string name="NIP">NIP</string>
+    <string name="NIPNIP">NIPNIP</string>
+    <string name="Eve">Eve</string>
+    <string name="Mor">Mor</string>
+    <string name="Date">Date:</string>
+    <string name="Session">Session:</string>
+    <string name="debit1">Debit</string>
+    <string name="closing_date">Closing date</string>
+    <string name="installment">Installment</string>
+    <string name="debit_date">Debit date</string>
+    <string name="total_document">Total document Charges</string>
+    <string name="total_debit">Total
+        Debit</string>
+    <string name="total_interest">Total Interest</string>
+    <string name="total_customers">Total Customers</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="employee">Employee</string>
+    <string name="debit_amount">Debit amount</string>
+    <string name="paid_amount">Paid amount</string>
+    <string name="openingdate">Opening date</string>
+    <string name="total_days">Total days</string>
+    <string name="paid_days">Paid days</string>
+    <string name="missing_days">Missing days</string>
+    <string name="balanace_days">Balanace days</string>
+    <string name="balance_amount">Balance amount</string>
+    <string name="missing_amount">Missing amount</string>
+    <string name="offer">Offer</string>
+    <string name="collection1">Collection</string>
+    <string name="balance_customers">Balance customers</string>
+    <string name="paid_customers">Paid customers</string>
+    <string name="total">Total</string>
+    <string name="account_type">Account type</string>
+    <string name="total_balance">Total balance</string>
+    <string name="search">Search</string>
+    <string name="Clear">clear</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="current_account">Current account</string>
+    <string name="closed_account">Closed account</string>
+    <string name="today_account">Today account</string>
+    <string name="current_incompleted_account">Current incompleted account</string>
+    <string name="nip_account">NIP account</string>
+    <string name="nip_nip_account">NIP NIP account</string>
+    <string name="total_customer">Total customer</string>
+    <string name="type">Type</string>
+    <string name="today_report1">Today Report</string>
+    <string name="employee_details1">Employee Details</string>
+    <string name="tally1">Tally</string>
+    <string name="customer1">Customer</string>
+    <string name="reports1">Reports</string>
+    <string name="account1">Account</string>
+    <string name="user1">User</string>
+    <string name="payment">Payment</string>
+    <string name="non_debit_customers">Non-Debit Customers</string>
+    <string name="debit_customers">Debit Customers</string>
+    <string name="before_balance">Before Balance </string>
+    <string name="new_credit">New Credit</string>
+    <string name="current_collection">Current Collection</string>
+    <string name="nip_collection">NIP collection</string>
+    <string name="nipnip_collection">NIPNIP collection</string>
+    <string name="document_charge">Document charge</string>
+    <string name="interest_income">Interest Income</string>
+    <string name="total_acc_dedit">Total Acc Dedit</string>
+    <string name="total_balance_amount">Total Balance Amount</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="previous_due">Previous Due </string>
+    <string name="selected_date_debit">Selected Date Debit</string>
+    <string name="current_collection_amount">Current collection Amount</string>
+    <string name="moved_to_nip">Moved to NIP</string>
+    <string name="nip_balance">NIP Balance</string>
+    <string name="previous_nip">Previous NIP :</string>
+    <string name="today_nip_balance">Today NIP Balance</string>
+    <string name="today_nip_income">Today NIP Income</string>
+    <string name="moved_to_nip_nip">Moved to NIP NIP</string>
+    <string name="total_discount">Total Discount</string>
+    <string name="nipnip_balance">NIPNIP Balance</string>
+    <string name="yesterday_nipnip_balance">Yesterday NIPNIP Balance</string>
+    <string name="today_nipnip_balance">Today NIPNIP Balance</string>
+    <string name="today_nipnip_income">Today NIPNIP Income</string>
+    <string name="order_id">Order id</string>
+    <string name="id">Id</string>
+    <string name="show">Show</string>
+    <string name="select_order_by"><u>Select Order By </u></string>
+    <string name="select_following"><u>Select Following</u></string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="select_orientation"><u>Select Orientation</u></string>
+    <string name="today_collection">Today Collection</string>
+    <string name="total_collection">Total collection</string>
+    <string name="high">High Amount</string>
+    <string name="low_amount">Low amount</string>
+    <string name="expense">Expense (Acc Debit) :</string>
+    <string name="mail">Mail</string>
+    <string name="backup">Backup</string>
+    <string name="credit">Credit</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="set_mobile_pin">Set Mobile PIN</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="view">view</string>
+    <string name="reset">Reset</string>
+    <string name="create_account">Create Account</string>
+    <string name="admin_access">Admin Access</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="email_cc">Email CC</string>
+    <string name="print">Print</string>
+    <string name="privilege">privilege</string>
+    <string name="bulk_update">Bulk Update</string>
+    <string name="new_debit">New Debit</string>
+    <string name="update_all">Update All</string>
+    <string name="mobile_pin_validate">Mobile Pin Validate</string>
+    <string name="forgot_pin">Forgot PIN ?</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="submit">Submit</string>
+    <string name="credited_amount">Credited amount</string>
+    <string name="info">Info</string>
+    <string name="equals_tally">Your Tally amount equals collected amount.</string>
+    <string name="is_added">is added to account balance</string>
+    <string name="logout_alert">Are You Sure want to logout</string>
+    <string name="warning">Warning</string>
+    <string name="ok">OK</string>
+    <string name="auto">Auto</string>
+    <string name="manual">Manual</string>
+    <string name="select">Select</string>
+    <string name="enter_amount_alert">Please enter amount and select type</string>
+    <string name="enter_amount">Please enter the Amount</string>
+    <string name="enter_userandpass">Please enter username and password</string>
+    <string name="fill_all">Please fill all fields</string>
+    <string name="create_debit">Create debit</string>
+    <string name="no_debit">No debit has been added...</string>
+    <string name="entyer_amount">Please enter Collection amount</string>
+    <string name="no_more">Please enter total days more than 1 days and debit amount</string>
+    <string name="passs_miss">Password Mismatch</string>
+    <string name="delete_value">Are You Sure want to delete this value</string>
+    <string name="move_morning">Are You Sure want to move this value to Morning</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="move_evening">Are You Sure want to move this value to Evening</string>
+    <string name="moveto_nip">Are You Sure want to move this value to NIP</string>
+    <string name="moveto_nipnip">Are You Sure want to move this value to NIPNIP</string>
+    <string name="cannot_swipe">NIPNIP account cannot be swiped</string>
+    <string name="company1">Company</string>
+    <string name="investment">Investment</string>
+    <string name="finance">Finance</string>
+    <string name="chittu">Chittu</string>
+    <string name="transferhand">Transfer_Hand</string>
+    <string name="anamattu">Anamattu</string>
+    <string name="otherincome">Other_Income</string>
+    <string name="employeecredit">Employee_credit</string>
+    <string name="profit">Profit</string>
+    <string name="petrol">Petrol</string>
+    <string name="rent">Rent</string>
+    <string name="debithand">Debit_Hand</string>
+    <string name="vehicleexpense">Vehicle_Expense</string>
+    <string name="otherexpense">Other_Expense</string>
+    <string name="donationexpense">Donation_Expense</string>
+    <string name="employeeexpense">Employee_Expense</string>
+    <string name="lose">Lose</string>
+    <string name="expirydate_alert">Your Expiry Date has been overed..</string>
+</resources>
